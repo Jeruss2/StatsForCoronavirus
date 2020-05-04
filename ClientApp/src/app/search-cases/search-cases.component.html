@@ -1,0 +1,13 @@
+<p>Coronavirus Statistics</p>
+
+
+
+<div *ngIf="cases">
+  <div *ngFor="let case of cases">
+    <div>Total Cases: {{case.totalCases}}</div>
+    <div>Total Deaths: {{case.totalDeaths}}</div>
+    <div>Total Recoveries: {{case.totalRecoveries}}</div>
+    <div>Date: {{case.dateAdded}}</div>
+  <div>_____________________________</div>
+  </div>
+</div>
